@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="SurveyformCss.css">
+<body>
+    <header id="header">
+        <h1 id="title">Netflix Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form" action="/url">
+        <label for="name">
+            <p id="para">Name</p>
+            <input id="input" type="text" placeholder="Enter your name"required>
+        </label>
+        <label for="Email">
+            <p id="para">Email</p>
+            <input id="input" type="text" placeholder="Enter your Email"required>
+        </label>
+        <label for="Age">
+            <p id="para">Age <small>(optional)</small></p>
+            <input id="input" type="number" min="10" max="99" placeholder="Age"required>
+        </label>
+             <p id="para">Which option best describe describe your current role?</p>
+             <select id="input" name="role" required>
+               <option disabled selected value>Select current role</option>
+               <option value="student">Student</option>
+               <option value="job">Full Time Job</option>
+               <option value="learner">Full Time Learner</option>
+               <option value="preferNo">Prefer not to say</option>
+               <option value="other">Other</option>
+             </select>
+             <p id="para">Would you recommend Neflix to a friend?</p>
+        <label for="recommend" id="container">
+             <input id="radio" name="recommend" value="Definetely" type="radio" checked/>Definetely
+        </label>
+         <label for="recommend" id="container">
+            <input id="radio" name="recommend" value="Maybe" type="radio"/>May be
+         </label>
+         <label for="recommend" id="container">
+             <input id="radio" name="recommend" value="Notsure" type="radio"/>Not sure
+         </label>
+         <p id="para2">What are your favourite Netflix Original program?</p>
+             <select id="input" name="favourite" required>
+               <option disabled selected value>Select an option</option>
+               <option value="Drama">Drama Series</option>
+               <option value="Documentaries">Documentaries</option>
+               <option value="Anime">Anime</option>
+               <option value="Movies">Movies</option>
+               <option value="Comedy">Comedy Series</option>
+               <option value="Kids">Kids Series</option>
+               <option value="Stand-Up">Stand-Up Comedy</option>
+             </select>
+             <p id="para">What would you like to see improved? <small>(Check all that apply)</small></p>
+         <label for="improve" id="container">
+             <input id="radio" name="improve" value="Content" type="checkbox" checked/>Content
+         </label>
+         <label for="improve" id="container">
+             <input id="radio" name="improve" value="Programs" type="checkbox"/>Programs
+         </label>
+         <label for="improve" id="container">
+             <input id="radio" name="improve" value="Community" type="checkbox"/>Community
+         </label>
+         <label for="improve" id="container">
+             <input id="radio" name="improve" value="Quality" type="checkbox"/>Video Quality
+          </label>
+          <label for="improve" id="container">
+            <input id="radio" name="improve" value="User-Interface" type="checkbox"/>User-Interface
+         </label>
+         <label for="improve" id="container">
+            <input id="radio" name="improve" value="Data-visualization" type="checkbox"/>Data-Visualization
+         </label>
+         <label for="improve" id="container">
+            <input id="radio" name="improve" value="Community" type="checkbox"/>Community
+         </label>
+         <label for="improve" id="container">
+            <input id="radio" name="improve" value="Forum" type="checkbox"/>Forum
+         </label>
+         <label for="improve" id="container">
+            <input id="radio" name="improve" value="Meetups" type="checkbox"/>City Meetups
+         </label>
+         <p id="para2">Any comments or suggestions?</p>
+         <input id="input2" type="text" placeholder="Enter your comment here..."required>
+            <button id="button" type="submit">Submit</button>
+    </form>
+</body>
